@@ -1,2 +1,38 @@
 @import 'reset.scss';
 @import '../../node_modules/jeet/scss/jeet/_jeet.scss';
+
+@font-face {
+  font-family: 'keep_calm_medregular';
+  src: url('fonts/keepcalm-medium-webfont.woff2') format('woff2'),
+       url('fonts/keepcalm-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#subtle-background {
+  background-color: #303E4E;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+div.header {
+  position: relative;
+  z-index: 100;
+  @include col(1/1);
+  height: 740px;
+
+  .header-inner-container {
+    // max-width: 1600px;
+    // @include col(1/1);
+    @include center($max_width: 1600px);
+    height: 100%;
+    padding: 0 5% 0 5%;
+
+    svg {
+      font-family: 'keep_calm_medregular';
+      margin-top: 55px;
+    }
+  }
+}
