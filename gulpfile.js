@@ -35,9 +35,9 @@ gulp.task('images', function() {
 });
 
 gulp.task('svg', function () {
-  return gulp.src('src/inc/vectors/*.svg')
+  return gulp.src('src/inc/*.svg')
     .pipe(svgmin())
-    .pipe(gulp.dest('dist/inc/vectors'));
+    .pipe(gulp.dest('dist/inc'));
 });
 
 gulp.task('watch', function() {
