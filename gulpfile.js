@@ -11,14 +11,14 @@ gulp.task('scripts', function() {
   return gulp.src(['src/js/*.js', 'app/*.js'])
     .pipe(concat('core.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('dist/src/js'));
+    .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('styles', function() {
   return gulp.src('src/scss/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(cssnano())
-    .pipe(gulp.dest('./dist/src/css/'));
+    .pipe(gulp.dest('./dist/css/'));
 });
 
 gulp.task('images', function() {
@@ -31,13 +31,13 @@ gulp.task('images', function() {
       ],
       use: [pngquant()]
     }))
-    .pipe(gulp.dest('dist/src/img'));
+    .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('svg', function () {
   return gulp.src('src/inc/vectors/*.svg')
     .pipe(svgmin())
-    .pipe(gulp.dest('dist/src/inc/vectors'));
+    .pipe(gulp.dest('dist/inc/vectors'));
 });
 
 gulp.task('watch', function() {
