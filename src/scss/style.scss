@@ -41,6 +41,7 @@ div.header {
     }
 
     .navigation-container {
+      margin-top: 85px;
       @include col(5/10, $gutter: 0);
 
       ul {
@@ -68,15 +69,25 @@ div.header {
 
       .green {
         a {
-          padding: 0 0 0 0;
+          cursor: pointer;
+          padding: 10px 20px;
           border: 1px solid #7ABB6C;
-          border-radius: 10px;
+          border-radius: 20px;
           color: #7ABB6C;
+          transition: all .3s ease;
+        }
+
+        &:hover {
+          a {
+            color: white;
+            background-color: #7ABB6C;
+          }
         }
       }
     }
 
     .app-preview-container {
+      pointer-events:none;
       position: relative;
       top: -103px;
       @include col(1/1);
