@@ -1,5 +1,6 @@
 @import 'reset.scss';
 @import '../../node_modules/jeet/scss/jeet/_jeet.scss';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600,600italic,700,700italic,800,800italic);
 
 @font-face {
   font-family: 'keep_calm_medregular';
@@ -29,9 +30,50 @@ div.header {
     height: 100%;
     padding: 0 5% 0 5%;
 
-    svg {
-      font-family: 'keep_calm_medregular';
+    .logo-container {
       margin-top: 55px;
+      @include col(5/10, $gutter: 0);
+
+      svg {
+        font-family: 'keep_calm_medregular';
+        // margin-top: 55px;
+      }
+    }
+
+    .navigation-container {
+      @include col(5/10, $gutter: 0);
+
+      ul {
+        float: right;
+
+        li {
+          float: left;
+
+          &:not(:last-of-type) {
+            margin-right: 40px;
+          }
+
+          a {
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .white {
+        a {
+          color: white;
+        }
+      }
+
+      .green {
+        a {
+          padding: 0 0 0 0;
+          border: 1px solid #7ABB6C;
+          border-radius: 10px;
+          color: #7ABB6C;
+        }
+      }
     }
 
     .app-preview-container {
