@@ -294,4 +294,12 @@ div.features {
   height: 1350px;
   background-color: white;
   border-bottom: 1px solid #E4E7F0;
+
+  .features-inner-container {
+    @include col(1/1);
+    max-width: 1660px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 1350px;
+  }
 }
