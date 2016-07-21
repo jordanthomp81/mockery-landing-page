@@ -24,6 +24,7 @@ div.header {
   @include col(1/1);
   height: 750px;
   box-sizing: border-box;
+  overflow: hidden;
 
   .header-inner-container {
     @include center($max_width: 1600px);
@@ -197,28 +198,38 @@ div.header {
 }
 
 div.benefits {
+  clear: both;
+  pointer-events: none;
   position: relative;
   @include col(1/1);
   width: 100%;
-  height: 630px;
+  height: auto;
   background-color: white;
   border-bottom: 1px solid #E4E7F0;
+
+  .benefits-inner-container {
+    @include col(1/1);
+    max-width: 1660px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+  }
 
   h6.benefit-sub-headline {
     font-family: 'Open Sans', sans-serif;
     color: #7ABB6C;
     font-size: 15px;
     text-align: center;
-    font-weight: 100;
+    font-weight: 200;
     margin-top: 60px;
     @include col(1/1, $gutter: 0);
   }
 
   h2.benefit-headline {
     font-family: 'Open Sans', sans-serif;
-    color: lighten(#6B6B6B, 2%);
+    color: darken(#656363, 10%);
     font-size: 28px;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
     margin-top: 25px;
     @include col(1/1, $gutter: 0);
@@ -232,6 +243,47 @@ div.benefits {
     background-color: darken(#E9EAEA, 3%);
     margin-left: 50%;
     transform: translateX(-50%);
+  }
+
+  div.benefit-items-container {
+    @include col(1/1, $gutter: 0);
+    margin-top: 65px;
+
+    div.benefit-item {
+      @include col(1/3, $gutter: 8);
+      height: 300px;
+
+      .icon-container {
+        @include col(1/1, $gutter: 0);
+
+        svg {
+          margin-left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      h3.benefit-item-headline {
+        font-family: 'Open Sans', sans-serif;
+        color: darken(#656363, 10%);
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 20px;
+        @include col(1/1, $gutter: 0);
+      }
+
+      p.benefit-item-copy {
+        font-family: 'Open Sans', sans-serif;
+        color: #656363;
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 30px;
+        line-height: 25px;
+        margin-bottom: 50px;
+        @include col(1/1, $gutter: 0);
+      }
+    }
   }
 }
 
