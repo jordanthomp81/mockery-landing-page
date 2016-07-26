@@ -1,5 +1,7 @@
 @import 'reset.scss';
+@import '../../node_modules/include-media/dist/_include-media.scss';
 @import '../../node_modules/jeet/scss/jeet/_jeet.scss';
+@import 'responsive.scss';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600,600italic,700,700italic,800,800italic);
 
 @font-face {
@@ -38,7 +40,6 @@ div.header {
 
       svg {
         font-family: 'keep_calm_medregular';
-        // margin-top: 55px;
       }
     }
 
