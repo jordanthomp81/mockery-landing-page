@@ -103,6 +103,7 @@ div.header {
         font-weight: 400;
         letter-spacing: 3px;
         color: white;
+        line-height: 48px;
       }
 
       p.header-form-submit-copy {
@@ -199,7 +200,7 @@ div.benefits {
   @include col(1/1);
   width: 100%;
   height: 580px;
-  overflow: hidden;
+  overflow: hidden !important;
   background-color: white;
   border-bottom: 1px solid #E4E7F0;
 

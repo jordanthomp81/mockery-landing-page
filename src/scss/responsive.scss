@@ -17,18 +17,30 @@
     @include col(1/1, $gutter: 0);
   }
 
+  // @media (max-width: 465px) {
+  //   // .header {
+  //   //
+  //   // }
+  // }
+
+  @media (max-width: 520px) {
+    .header {
+      height: 650px !important;
+    }
+  }
+
   .header-copy-container {
     .header-form-submit-copy {
       width: 87%;
     }
 
     h1 {
-      font-size: 30px !important;
+      font-size: 35px !important;
     }
 
     p.header-form-submit-copy {
       text-decoration: none;
-      font-size: 15px !important;
+      font-size: 18px !important;
     }
   }
 
@@ -36,7 +48,7 @@
     bottom: 0px;
     height: 250px !important;
 
-    @media (max-width: 465px) {
+    @media (max-width: 520px) {
       display: none;
     }
   }
@@ -50,7 +62,12 @@
   }
 
   .logo-container {
-    @include col(1/1, $gutter: 0);
+    width: 100% !important;
+
+    svg {
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   .header-form-submit {
