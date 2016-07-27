@@ -48,9 +48,9 @@ function featureActive() {
     // place waypoints here
     createWaypoint('.benefit-items-container', '', '70%', benefitActive);
     // waypointer(['.feature-one', '.feature-two', '.feature-three'], 'active', '30%', featureActive);
-    createWaypoint('.feature-one', 'active', '-85%', featureActive);
-    createWaypoint('.feature-two', 'active', '-145%', featureActive);
-    createWaypoint('.feature-three', 'active', '-205%', featureActive);
+    // createWaypoint('.feature-one', 'active', '-85%', featureActive);
+    // createWaypoint('.feature-two', 'active', '-145%', featureActive);
+    // createWaypoint('.feature-three', 'active', '-205%', featureActive);
     // footer-copy-container
     createWaypoint('.footer-form', 'active', '70%', footerActive);
   });

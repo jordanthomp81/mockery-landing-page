@@ -318,10 +318,10 @@ div.features {
 
     .feature-container {
       @include col(1/1);
-      display: none;
+      display: block;
 
       &.active {
-        display: block;
+        display: none;
       }
 
       &:not(:first-of-type) {
@@ -342,11 +342,12 @@ div.features {
 
       .feature-image-container {
         @include col(1/2, $gutter: 0);
-        height: 482px;
+        // height: 482px;
 
         .feature-image-inner-container {
-          width: 80%;
-          height: 100%;
+          @include col(1/1, $gutter: 0);
+          width: 30vw;
+          height: 30vw;
           background-color: #F8FAFC;
           margin-left: 50%;
           transform: translateX(-50%);
