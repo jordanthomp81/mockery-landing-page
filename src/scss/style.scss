@@ -199,15 +199,20 @@ div.benefits {
   @include col(1/1);
   width: 100%;
   height: 580px;
+  overflow: hidden;
   background-color: white;
   border-bottom: 1px solid #E4E7F0;
 
   .benefits-inner-container {
     @include col(1/1);
     max-width: 1600px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    // margin-left: 50%;
+    // transform: translateX(-50%);
     height: 100%;
+    width: calc(100% - 10%);
+    padding-left: 5%;
+    padding-right: 5%;
+    // padding: 0 5%;
   }
 
   h6.benefit-sub-headline {
@@ -245,7 +250,9 @@ div.benefits {
     margin-top: 90px;
 
     div.benefit-item {
-      @include col(1/3, $gutter: 8);
+      @media (min-width: 768px) {
+        @include col(1/3, $gutter: 8);
+      }
       height: 300px;
       display: none;
 
