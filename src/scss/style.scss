@@ -239,7 +239,7 @@ div.benefits {
   div.benefit-headline-border {
     height: 1px;
     @include col(1/1, $gutter: 0);
-    max-width: 270px;
+    max-width: 170px;
     margin-top: 25px;
     background-color: darken(#E9EAEA, 3%);
     margin-left: 50%;
@@ -290,8 +290,8 @@ div.benefits {
 
       p.benefit-item-copy {
         font-family: 'Open Sans', sans-serif;
-        color: darken(#C0C3C6, 20%);
-        font-size: 15px;
+        color: darken(#C0C3C6, 22%);
+        font-size: 16px;
         font-weight: 300;
         text-align: center;
         margin-top: 30px;
@@ -415,7 +415,7 @@ div.features {
           font-size: 35px;
           line-height: 45px;
           font-weight: 300;
-          margin-top: 30px;
+          margin-top: 20px;
         }
 
         .feature-copy {
