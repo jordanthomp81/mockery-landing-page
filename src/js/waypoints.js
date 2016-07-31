@@ -46,7 +46,7 @@ function featureActive() {
   $(function() {
 
     // place waypoints here
-    createWaypoint('.benefit-items-container', '', '70%', benefitActive);
+    createWaypoint('.benefit-items-container', '', '90%', benefitActive);
     // waypointer(['.feature-one', '.feature-two', '.feature-three'], 'active', '30%', featureActive);
     // createWaypoint('.feature-one', 'active', '-85%', featureActive);
     // createWaypoint('.feature-two', 'active', '-145%', featureActive);
