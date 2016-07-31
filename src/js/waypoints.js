@@ -63,6 +63,7 @@ function featureThree() {
     createWaypoint('.feature-one', null, '-125%', featureTwo);
     createWaypoint('.feature-two', null, '-225%', featureThree);
     // footer-copy-container
-    createWaypoint('.footer-form', 'active', '-200%', footerActive);
+    // createWaypoint('.footer-form', 'active', '-200%', footerActive);
+    createWaypoint('.footer-form', 'active', '-150%', footerActive);
   });
 }(jQuery));
