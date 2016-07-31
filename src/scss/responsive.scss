@@ -99,7 +99,7 @@
   }
 
   .feature-two {
-    display: block;
+    display: none;
   }
 }
 
@@ -107,6 +107,10 @@
 
   .feature-two-mobile {
     display: block;
+    margin-top: 240px !important;
+    clear: both;
+    width: 100%;
+    float: left;
   }
 
   .feature-two {
