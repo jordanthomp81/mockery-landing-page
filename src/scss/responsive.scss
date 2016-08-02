@@ -139,6 +139,27 @@
 
 @media (min-width: 1101px) {
 
+  .feature-copy-container {
+    // &:not(:nth-of-type(2)) {
+      h3.feature-copy-sub-headline {
+        margin-left: 3.5%;
+      }
+
+      h2.feature-copy-headline {
+        margin-left: 3.5%;
+      }
+
+      p.feature-copy {
+        margin-left: 3.5%;
+      }
+
+      .get-access-btn {
+        margin-left: 3.5%;
+      }
+    // }
+  }
+
+
   .feature-three {
     margin-bottom: 60px !important;
   }

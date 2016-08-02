@@ -56,14 +56,23 @@ function featureThree() {
 ;(function($){
   $(function() {
 
+    if($(window).width() < 1100) {
+      $('.feature-two-mobile').show();
+      $('.feature-two-mobile').show();
+      $('.feature-two').hide();
+    }else {
+      $('.feature-two-mobile').hide();
+      $('.feature-two').show();
+    }
+
     // place waypoints here
     createWaypoint('.benefit-items-container', '', '100%', benefitActive);
     // waypointer(['.feature-one', '.feature-two', '.feature-three'], 'active', '30%', featureActive);
-    createWaypoint('.features', 'active', '55%', featureActive);
-    createWaypoint('.feature-one', null, '-125%', featureTwo);
-    createWaypoint('.feature-two', null, '-225%', featureThree);
+    // createWaypoint('.features', 'active', '55%', featureActive);
+    // createWaypoint('.feature-one', null, '-125%', featureTwo);
+    // createWaypoint('.feature-two', null, '-225%', featureThree);
     // footer-copy-container
     // createWaypoint('.footer-form', 'active', '-200%', footerActive);
-    createWaypoint('.footer-form', 'active', '-150%', footerActive);
+    // createWaypoint('.footer-form', 'active', '-150%', footerActive);
   });
 }(jQuery));
