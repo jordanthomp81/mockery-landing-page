@@ -151,6 +151,7 @@ div.header {
           cursor: pointer;
           width: 100px;
           height: 45px;
+          border: none;
           border-radius: 0 40px 40px 0;
           background-color: #7ABB6C;
           transition: all .3s ease;
@@ -373,6 +374,7 @@ div.features {
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center center;
+          box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.10);
 
           .feature-image-navigation {
             position: absolute;
@@ -551,6 +553,7 @@ div.features {
           cursor: pointer;
           width: 100px;
           height: 45px;
+          border: none;
           border-radius: 0 40px 40px 0;
           background-color: #7ABB6C;
           transition: all .3s ease;
